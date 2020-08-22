@@ -39,7 +39,24 @@ app.get('/stats', async (req, res) => {
 	res.sendFile(path.join(__dirname, "./public/stats.html"))
 });
 
+//
+// API Routes
+//
+app.get('/api/workouts', async (req, res) => {
 
+});
+
+app.put('/api/workouts/:id', async (req, res) => {
+
+});
+
+app.post("/api/workouts", async ({ body }, res) => {
+
+});
+
+app.get('/api/workouts/range', async (req, res) => {
+
+});
 
 app.listen(PORT, () => {
 	console.log(`Server running at localhost:${PORT}`);
