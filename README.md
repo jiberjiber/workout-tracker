@@ -23,8 +23,8 @@
 
  ## Installation 
  To install this program, you have a couple options. 
-1. Install program using `n/a`
-2. Download the repo and use node to run the index.js file 
+1. Download or clone the repo and run ```npm i``` to install dependencies
+2. Run the server with ```npm start```
 
  ## Usage 
  Navigate to [Workout Tracker's Homepage]() and add your workout to begin. You can add as many workouts as you want per day, and when you're done adding workouts click *Complete*.
