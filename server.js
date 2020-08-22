@@ -24,7 +24,20 @@ app.use(morgan('dev'));
 // Mongo Connect
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout-tracker", { useNewUrlParser: true, useUnifiedTopology: true });
 
+//
+// HTML Routes
+//
+app.get('/', async (req, res) => {
+	res.sendFile(path.join(__dirname, 'index.html'));
+});
 
+app.get('/exercise', async (req, res) => {
+	res.sendFile(path.join(__dirname, './public/exercise.html'));
+});
+
+app.get('/stats', async (req, res) => {
+	res.sendFile(path.join(__dirname, "./public/stats.html"))
+});
 
 
 
