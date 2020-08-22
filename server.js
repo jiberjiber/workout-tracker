@@ -43,7 +43,11 @@ app.get('/stats', async (req, res) => {
 // API Routes
 //
 app.get('/api/workouts', async (req, res) => {
-
+	db.Workout.find({}).then(response => {
+		res.json(response);
+	}).catch(err => {
+		res.json(err.message);
+	});
 });
 
 app.put('/api/workouts/:id', async (req, res) => {
