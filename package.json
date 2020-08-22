@@ -1,5 +1,5 @@
 {
-  "name": "mongoose_skeleton",
+  "name": "workout-tracker",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,11 +9,19 @@
     "watch": "nodemon server.js",
     "seed": "node seeders/seed.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Evan Boswood",
+  "license": "GPL-3.0-or-later",
   "dependencies": {
     "express": "^4.16.3",
     "mongoose": "^5.3.16",
     "morgan": "^1.9.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiberjiber/workout-tracker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jiberjiber/workout-tracker/issues"
+  },
+  "homepage": "https://github.com/jiberjiber/workout-tracker#readme"
 }
