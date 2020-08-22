@@ -63,11 +63,21 @@ app.put('/api/workouts/:id', async (req, res) => {
 });
 
 app.post("/api/workouts", async ({ body }, res) => {
-
+	try {
+        let data = await db.Workout.create(body)
+        res.json(data);
+    } catch ({ message }) {
+        res.json(message);
+    }
 });
 
 app.get('/api/workouts/range', async (req, res) => {
-
+	try {
+        let data = await db.Workout.find({}).sort({ day: -1 }).limit(7)
+        res.json(data); 
+    } catch (error) {
+        res.json(error); 
+    }
 });
 
 app.listen(PORT, () => {
