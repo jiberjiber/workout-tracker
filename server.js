@@ -51,7 +51,15 @@ app.get('/api/workouts', async (req, res) => {
 });
 
 app.put('/api/workouts/:id', async (req, res) => {
-
+	db.Workout.update(
+		{ _id: mongoose.Types.ObjectId(req.params.id) },
+		{ $push: { exercises: req.body } },
+		{ new: true }
+	).then(data => {
+		res.json(data);
+	}).catch(err => {
+		res.json(err);
+	});
 });
 
 app.post("/api/workouts", async ({ body }, res) => {
