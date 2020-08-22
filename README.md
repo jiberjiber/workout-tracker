@@ -2,7 +2,7 @@
 
  Version 1.0.0 
 
- [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/jiberjiber.github.io/workout-tracker.svg)](http://jiberjiber.github.io/workout-tracker/)  [![GitHub last commit](https://img.shields.io/github/last-commit/jiberjiber/workout-tracker)](https://github.com/jiberjiber/workout-tracker/graphs/commit-activity) 
+ [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![Website shields.io](https://img.shields.io/website-up-down-green-red/http/workout-tracker-emb.herokuapp.com.svg)](http://workout-tracker-emb.herokuapp.com/)  [![GitHub last commit](https://img.shields.io/github/last-commit/jiberjiber/workout-tracker)](https://github.com/jiberjiber/workout-tracker/graphs/commit-activity) 
 
  ## Description 
  Workout Tracker is a simple web app created to track workout times, weights, types, and other data. 
@@ -27,7 +27,7 @@
 2. Run the server with ```npm start```
 
  ## Usage 
- Navigate to [Workout Tracker's Homepage]() and add your workout to begin. You can add as many workouts as you want per day, and when you're done adding workouts click *Complete*.
+ Navigate to [Workout Tracker's Homepage](http://workout-tracker-emb.herokuapp.com/) and add your workout to begin. You can add as many workouts as you want per day, and when you're done adding workouts click *Complete*.
 
 Navigate to the dashboard to view your completed workouts and associated stats. 
 
